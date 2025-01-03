@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+
 class Heap<T extends Comparable<T>> {
 
     private ArrayList<T> list;
@@ -54,7 +55,7 @@ class Heap<T extends Comparable<T>> {
         return temp;
     }
 
-    private void  downHeap(int index) {
+    private void downHeap(int index) {
         int min = index;
         int left = left(index);
         int right = right(index);
@@ -68,5 +69,13 @@ class Heap<T extends Comparable<T>> {
             swap(min, index);
             downHeap(min);
         }
+    }
+
+    public ArrayList<T> HeapSort() throws Exception {
+        ArrayList<T> data = new ArrayList<>();
+        while(!list.isEmpty()) {
+            data.add(this.remove());
+        }
+        return data;
     }
 }
