@@ -1,5 +1,5 @@
 import java.util.HashMap;
-import java.util.ArrayList;
+import java.util.ArrayList
 
 class TimeMap {
     HashMap<String, ArrayList<Integer>> mapKey;
