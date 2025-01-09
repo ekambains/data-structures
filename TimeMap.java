@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.ArrayList;
 
+// This data structure is like a HashMap with timestamps.
 class TimeMap {
     HashMap<String, ArrayList<Integer>> mapKey;
     HashMap<Integer, String> mapTime;
