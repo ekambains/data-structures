@@ -1,10 +1,18 @@
+package graphs;
+import java.util.ArrayList;
 //Graph Using Adjacency Matrix
 
 public class Graph {
     int[][] matrix;
+    ArrayList<Node> nodes;
 
     Graph(int size) {
         matrix = new int[size][size];
+        nodes = new ArrayList<>();
+    }
+
+    public void addNode(Node node) {
+        nodes.add(node);
     }
 
     public void addEdge(int src, int dst) {
